@@ -7,7 +7,7 @@ class ProjectTestCLass(TestCase):
     setup self instance of project
     '''
     def setUp(self):
-        self.post = Project(project_name='awward',project_url='www.awards.com',location='kenya')
+        self.post = Project(project_name='awards',project_url='www.awards.com',location='kenya')
     
     ''' 
     test instance of project

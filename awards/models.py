@@ -18,7 +18,7 @@ def save_user_profile(sender, instance, **kwargs):
 class Profile(models.Model):
     Profile_photo = models.ImageField(upload_to = 'images/',blank=True)
     Bio = models.TextField(max_length = 50,null = True)
-    user = models.OneToOneField(User,on_delete=models.CASCADE, primary_key=True)
+    user = models.OneToOneField(User,on_delete=models.CASCADE,  primary_key=True)
     rate = models.ManyToManyField('Project', related_name='image',max_length=30)
 
     def save_profile(self):
